@@ -38,16 +38,16 @@
                     <CollectionView.ItemTemplate>
                         <DataTemplate x:DataType="model:Monkey">
                             <Grid Padding="10">
-                                <Frame HeightRequest="125" Style="{StaticResource CardView}">
+                                <Frame HeightRequest="140" Style="{StaticResource CardView}">
                                     <Frame.GestureRecognizers>
                                         <TapGestureRecognizer 
                                         Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MonkeysViewModel}}, Path=GoToDetailsCommand}"
                                         CommandParameter="{Binding .}"/>
                                     </Frame.GestureRecognizers>
-                                    <Grid Padding="0" ColumnDefinitions="125,*">
+                                    <Grid Padding="0" ColumnDefinitions="140,*">
                                         <Image Aspect="AspectFill" Source="{Binding Image}"
-                                       WidthRequest="125"
-                                       HeightRequest="125"/>
+                                       WidthRequest="140"
+                                       HeightRequest="140"/>
                                         <VerticalStackLayout
                                     VerticalOptions="Center"
                                     Grid.Column="1"
